@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Swinject
 
 
 final class InitialViewModel {
@@ -15,12 +16,16 @@ final class InitialViewModel {
     private let service: FirstServiceProtocol
     private weak var viewInput: InitialViewInput?
     
+    // Not for service resolving inside the module but for further module creation
+    private let resolver: Resolver
+    
     
     // MARK: Lifecycle
     
-    init(service: FirstServiceProtocol, viewInput: InitialViewInput) {
+    init(service: FirstServiceProtocol, viewInput: InitialViewInput, resolver: Resolver) {
         self.service = service
         self.viewInput = viewInput
+        self.resolver = resolver
     }
 }
 
