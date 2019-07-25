@@ -17,7 +17,7 @@ final class InitialViewController: UIViewController {
     
     // MARK: Private Properties
     
-    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet private weak var descriptionLabel: UILabel!
     
     
     // MARK: Lifecycle
