@@ -22,5 +22,6 @@ final class ServiceAssembly: Assembly {
             
             return second
         }
+        .inObjectScope(.container)
     }
 }
