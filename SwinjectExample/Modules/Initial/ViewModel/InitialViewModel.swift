@@ -39,6 +39,9 @@ extension InitialViewModel: InitialViewOutput {
     }
     
     func didTapNextButton() {
-        
+        let builder = SomeModuleBuilder(resolver: resolver)
+        guard let vc = builder.build() else {
+            return
+        }
     }
 }
