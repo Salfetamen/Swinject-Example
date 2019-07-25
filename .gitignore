@@ -17,12 +17,6 @@ DerivedData/
 !default.perspectivev3
 xcuserdata/
 
-## R.Swift
-R.generated.swift
-
-## Generated files in local pods
-Local Pods/**/*.generated.swift
-
 ## Other
 *.moved-aside
 *.xccheckout
@@ -46,31 +40,3 @@ Package.pins
 # CocoaPods
 #
 Pods/
-
-# fastlane
-#
-fastlane/report.xml
-fastlane/Preview.html
-fastlane/screenshots
-fastlane/test_output
-fastlane/README.md
-fastlane/output/report
-
-# Documentation
-#
-Documentation Page
-
-# Environment normalization
-#
-/.bundle/
-/vendor/bundle
-
-# Snapshots
-#
-Snapshots/Snapshots.xcworkspace/contents.xcworkspacedata
-Snapshots/Snapshots.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
-Snapshots/SnapshotTests/ReferenceImages_64
-
-# Snapshot tests
-#
-UITests/FailureDiffs
