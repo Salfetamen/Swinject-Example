@@ -44,6 +44,6 @@ final class InitialModuleBuilder {
         let vm = InitialViewModel(service: service, viewInput: vc, resolver: resolver)
         vc.output = vm
         
-        return vc
+        return nvc
     }
 }
