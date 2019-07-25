@@ -5,17 +5,32 @@
 //  Created by a.stashevskiy on 25/07/2019.
 //
 
+import Swinject
 import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow?
+    // MARK: Private Properties
+    
+    private let assembler = Assembler()
 
 
+    // MARK: Public
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        setupDI()
+        
         return true
+    }
+    
+    
+    // MARK: Private
+    
+    private func setupDI() {
+        let assembly = ServiceAssembly()
+        assembler.apply(assembly: assembly)
     }
 
 }
