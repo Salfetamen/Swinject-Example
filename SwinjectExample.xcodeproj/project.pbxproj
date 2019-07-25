@@ -19,6 +19,7 @@
 		1D772B8B22EA4E8E002B56CF /* InitialViewIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D772B8A22EA4E8E002B56CF /* InitialViewIO.swift */; };
 		1D772B8D22EA4E9D002B56CF /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D772B8C22EA4E9D002B56CF /* InitialViewController.swift */; };
 		1D772B8F22EA4EB1002B56CF /* Initial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D772B8E22EA4EB1002B56CF /* Initial.storyboard */; };
+		1D772B9122EA50E0002B56CF /* InitialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D772B9022EA50E0002B56CF /* InitialViewModel.swift */; };
 		4C37AEA1AF2410034A968D54 /* Pods_SwinjectExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E315C560A83B911C9D8823 /* Pods_SwinjectExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		1D772B8A22EA4E8E002B56CF /* InitialViewIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewIO.swift; sourceTree = "<group>"; };
 		1D772B8C22EA4E9D002B56CF /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		1D772B8E22EA4EB1002B56CF /* Initial.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Initial.storyboard; sourceTree = "<group>"; };
+		1D772B9022EA50E0002B56CF /* InitialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewModel.swift; sourceTree = "<group>"; };
 		35D309D3D9D7D5BE39996621 /* Pods-SwinjectExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwinjectExample.debug.xcconfig"; path = "Target Support Files/Pods-SwinjectExample/Pods-SwinjectExample.debug.xcconfig"; sourceTree = "<group>"; };
 		5546FB9C7CA7E1CF187C34B8 /* Pods-SwinjectExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwinjectExample.release.xcconfig"; path = "Target Support Files/Pods-SwinjectExample/Pods-SwinjectExample.release.xcconfig"; sourceTree = "<group>"; };
 		D0E315C560A83B911C9D8823 /* Pods_SwinjectExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwinjectExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +138,7 @@
 		1D772B8922EA4E7F002B56CF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				1D772B9022EA50E0002B56CF /* InitialViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				1D772B6B22EA4990002B56CF /* AppDelegate.swift in Sources */,
 				1D772B7F22EA4B87002B56CF /* FirstService.swift in Sources */,
 				1D772B8722EA4E6A002B56CF /* InitialModuleBuilder.swift in Sources */,
+				1D772B9122EA50E0002B56CF /* InitialViewModel.swift in Sources */,
 				1D772B8122EA4BAF002B56CF /* SecondService.swift in Sources */,
 				1D772B8B22EA4E8E002B56CF /* InitialViewIO.swift in Sources */,
 				1D772B8D22EA4E9D002B56CF /* InitialViewController.swift in Sources */,
