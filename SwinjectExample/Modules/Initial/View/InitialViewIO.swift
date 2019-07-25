@@ -17,4 +17,5 @@ protocol InitialViewInput: AnyObject {
 protocol InitialViewOutput {
     
     func didLoadEvent()
+    func didTapNextButton()
 }

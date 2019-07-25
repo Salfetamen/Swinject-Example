@@ -37,4 +37,8 @@ extension InitialViewModel: InitialViewOutput {
     func didLoadEvent() {
         viewInput?.setDescription(service.description)
     }
+    
+    func didTapNextButton() {
+        
+    }
 }

@@ -32,6 +32,7 @@ final class InitialViewController: UIViewController {
     // MARK: Private
     
     @IBAction private func didTapNextButton(_ sender: Any) {
+        output?.didTapNextButton()
     }
 }
 
