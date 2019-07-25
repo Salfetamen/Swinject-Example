@@ -1,0 +1,76 @@
+# Xcode
+#
+## Build generated
+.DS_Store
+build/
+DerivedData/
+.DS_Store
+
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+
+## R.Swift
+R.generated.swift
+
+## Generated files in local pods
+Local Pods/**/*.generated.swift
+
+## Other
+*.moved-aside
+*.xccheckout
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+#
+Packages/
+Package.pins
+.build/
+
+# CocoaPods
+#
+Pods/
+
+# fastlane
+#
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/README.md
+fastlane/output/report
+
+# Documentation
+#
+Documentation Page
+
+# Environment normalization
+#
+/.bundle/
+/vendor/bundle
+
+# Snapshots
+#
+Snapshots/Snapshots.xcworkspace/contents.xcworkspacedata
+Snapshots/Snapshots.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+Snapshots/SnapshotTests/ReferenceImages_64
+
+# Snapshot tests
+#
+UITests/FailureDiffs
