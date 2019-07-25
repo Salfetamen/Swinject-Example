@@ -35,22 +35,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ka5-8N-zJ7">
-                                <rect key="frame" x="160.66666666666666" y="332.66666666666669" width="92.666666666666657" height="70.666666666666686"/>
+                                <rect key="frame" x="0.0" y="332.66666666666669" width="414" height="70.666666666666686"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First service" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVV-3B-Dtm">
-                                        <rect key="frame" x="0.0" y="0.0" width="92.666666666666671" height="20.333333333333332"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First service" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVV-3B-Dtm">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jMR-V4-GAt">
-                                        <rect key="frame" x="0.0" y="20.333333333333314" width="92.666666666666671" height="20.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="20.333333333333314" width="414" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uV-JJ-yxt">
-                                        <rect key="frame" x="0.0" y="40.666666666666629" width="92.666666666666671" height="30"/>
+                                        <rect key="frame" x="0.0" y="40.666666666666629" width="414" height="30"/>
                                         <state key="normal" title="Next"/>
                                         <connections>
                                             <action selector="didTapNextButton:" destination="JkA-Ne-wlx" eventType="touchUpInside" id="Ihn-fp-DWb"/>
@@ -61,6 +61,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="H4I-Qq-1WT" firstAttribute="trailing" secondItem="Ka5-8N-zJ7" secondAttribute="trailing" id="2LM-IV-veb"/>
+                            <constraint firstItem="Ka5-8N-zJ7" firstAttribute="leading" secondItem="H4I-Qq-1WT" secondAttribute="leading" id="FbF-GB-GES"/>
                             <constraint firstItem="Ka5-8N-zJ7" firstAttribute="centerX" secondItem="WqE-p9-pWp" secondAttribute="centerX" id="c28-zR-VoG"/>
                             <constraint firstItem="Ka5-8N-zJ7" firstAttribute="centerY" secondItem="WqE-p9-pWp" secondAttribute="centerY" id="vdi-bc-zM6"/>
                         </constraints>

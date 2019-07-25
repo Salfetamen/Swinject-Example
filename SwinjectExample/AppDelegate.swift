@@ -10,6 +10,11 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    // MARK: Public Properties
+    
+    var window: UIWindow?
+    
 
     // MARK: Private Properties
     
@@ -21,6 +26,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         setupDI()
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        let initialModuleBuilder = InitialModuleBuilder(resolver: assembler.resolver)
+        guard let vc = initialModuleBuilder.build() else {
+            return true
+        }
+        
+        window?.rootViewController = vc
+        window?.makeKeyAndVisible()
         
         return true
     }
