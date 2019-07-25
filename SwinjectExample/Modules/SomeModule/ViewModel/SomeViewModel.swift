@@ -40,7 +40,12 @@ final class SomeViewModel {
 extension SomeViewModel: SomeViewOutput {
     
     func didLoadEvent() {
+        // While navigating back and forward, this line will always be setting different values
         viewInput?.setFirstDescription(firstService.description)
+        
+        // While this one will be setting similar values. This is caused by registration
+        // second service in container scope, which means that one instance is returned
+        // every time you resolve it
         viewInput?.setSecondDescription(secondService.advancedDescription)
     }
 }
