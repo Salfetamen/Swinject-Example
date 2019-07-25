@@ -44,4 +44,8 @@ extension InitialViewController: InitialViewInput {
     func setDescription(_ description: String) {
         descriptionLabel.text = description
     }
+    
+    func showModule(with viewController: UIViewController) {
+        navigationController?.pushViewController(viewController, animated: true)
+    }
 }

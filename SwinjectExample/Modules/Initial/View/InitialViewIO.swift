@@ -5,12 +5,13 @@
 //  Created by a.stashevskiy on 25/07/2019.
 //
 
-import Foundation
+import UIKit
 
 
 protocol InitialViewInput: AnyObject {
     
     func setDescription(_ description: String)
+    func showModule(with viewController: UIViewController)
 }
 
 

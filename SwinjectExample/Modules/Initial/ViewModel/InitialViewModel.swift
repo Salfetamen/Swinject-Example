@@ -43,5 +43,7 @@ extension InitialViewModel: InitialViewOutput {
         guard let vc = builder.build() else {
             return
         }
+        
+        viewInput?.showModule(with: vc)
     }
 }
