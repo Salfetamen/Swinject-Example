@@ -17,7 +17,9 @@ final class SomeViewController: UIViewController {
     
     // MARK: Private Properties
     
-    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet private weak var firstLabel: UILabel!
+    @IBOutlet private weak var secondLabel: UILabel!
+    
     
     
     // MARK: Lifecycle
@@ -27,13 +29,6 @@ final class SomeViewController: UIViewController {
         
         output?.didLoadEvent()
     }
-    
-    
-    // MARK: Private
-    
-    @IBAction private func didTapNextButton(_ sender: Any) {
-        output?.didTapNextButton()
-    }
 }
 
 
@@ -41,7 +36,11 @@ final class SomeViewController: UIViewController {
 
 extension SomeViewController: SomeViewInput {
     
-    func setDescription(_ description: String) {
-        descriptionLabel.text = description
+    func setFirstDescription(_ description: String) {
+        firstLabel.text = description
+    }
+    
+    func setSecondDescription(_ description: String) {
+        secondLabel.text = description
     }
 }

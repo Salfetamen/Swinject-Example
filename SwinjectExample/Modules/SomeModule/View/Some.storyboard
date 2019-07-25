@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zyf-KF-VZK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JkA-Ne-wlx">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,32 +10,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="sjF-qm-G5S">
-            <objects>
-                <navigationController id="Zyf-KF-VZK" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zev-Mw-ni5">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="JkA-Ne-wlx" kind="relationship" relationship="rootViewController" id="PZh-5k-iuu"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rFy-xx-jny" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-642" y="94"/>
-        </scene>
-        <!--Initial View Controller-->
+        <!--Some View Controller-->
         <scene sceneID="GUA-IA-GbN">
             <objects>
-                <viewController id="JkA-Ne-wlx" customClass="InitialViewController" customModule="SwinjectExample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="JkA-Ne-wlx" customClass="SomeViewController" customModule="SwinjectExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WqE-p9-pWp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ka5-8N-zJ7">
-                                <rect key="frame" x="0.0" y="332.66666666666669" width="414" height="70.666666666666686"/>
+                                <rect key="frame" x="0.0" y="327.33333333333331" width="414" height="81.333333333333314"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First service" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVV-3B-Dtm">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="20.333333333333332"/>
@@ -44,18 +28,23 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jMR-V4-GAt">
-                                        <rect key="frame" x="0.0" y="20.333333333333314" width="414" height="20.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="20.333333333333371" width="414" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uV-JJ-yxt">
-                                        <rect key="frame" x="0.0" y="40.666666666666629" width="414" height="30"/>
-                                        <state key="normal" title="Next"/>
-                                        <connections>
-                                            <action selector="didTapNextButton:" destination="JkA-Ne-wlx" eventType="touchUpInside" id="Ihn-fp-DWb"/>
-                                        </connections>
-                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second service" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfu-ZY-C9k">
+                                        <rect key="frame" x="0.0" y="40.666666666666686" width="414" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6u2-dL-Pd9">
+                                        <rect key="frame" x="0.0" y="61.000000000000007" width="414" height="20.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -70,7 +59,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="UF9-0q-nk5"/>
                     <connections>
-                        <outlet property="descriptionLabel" destination="jMR-V4-GAt" id="ue7-Ae-pbO"/>
+                        <outlet property="firstLabel" destination="jMR-V4-GAt" id="VMT-Pb-oeJ"/>
+                        <outlet property="secondLabel" destination="6u2-dL-Pd9" id="UlJ-xo-VWh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wda-Gq-2jb" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -33,12 +33,18 @@ final class SomeModuleBuilder {
             return nil
         }
         
-        guard let service = resolver.resolve(FirstServiceProtocol.self) else {
+        guard
+            let firstService = resolver.resolve(FirstServiceProtocol.self),
+            let secondService = resolver.resolve(SecondServiceProtocol.self)
+        else {
             assertionFailure("First Service not registered!")
             return nil
         }
         
-        let vm = SomeViewModel(service: service, viewInput: vc, resolver: resolver)
+        let vm = SomeViewModel(firstService: firstService,
+                               secondService: secondService,
+                               viewInput: vc,
+                               resolver: resolver)
         vc.output = vm
         
         return vc

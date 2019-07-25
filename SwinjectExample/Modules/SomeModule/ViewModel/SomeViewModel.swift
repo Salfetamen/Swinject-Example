@@ -13,7 +13,8 @@ final class SomeViewModel {
     
     // MARK: Private Properties
     
-    private let service: FirstServiceProtocol
+    private let firstService: FirstServiceProtocol
+    private let secondService: SecondServiceProtocol
     private weak var viewInput: SomeViewInput?
     
     // Not for service resolving inside the module but for further module creation
@@ -22,8 +23,12 @@ final class SomeViewModel {
     
     // MARK: Lifecycle
     
-    init(service: FirstServiceProtocol, viewInput: SomeViewInput, resolver: Resolver) {
-        self.service = service
+    init(firstService: FirstServiceProtocol,
+         secondService: SecondServiceProtocol,
+         viewInput: SomeViewInput,
+         resolver: Resolver) {
+        self.firstService = firstService
+        self.secondService = secondService
         self.viewInput = viewInput
         self.resolver = resolver
     }
@@ -35,10 +40,7 @@ final class SomeViewModel {
 extension SomeViewModel: SomeViewOutput {
     
     func didLoadEvent() {
-        viewInput?.setDescription(service.description)
-    }
-    
-    func didTapNextButton() {
-        
+        viewInput?.setFirstDescription(firstService.description)
+        viewInput?.setSecondDescription(secondService.advancedDescription)
     }
 }

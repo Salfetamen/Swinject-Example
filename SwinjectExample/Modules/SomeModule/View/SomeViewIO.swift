@@ -10,12 +10,12 @@ import Foundation
 
 protocol SomeViewInput: AnyObject {
     
-    func setDescription(_ description: String)
+    func setFirstDescription(_ description: String)
+    func setSecondDescription(_ description: String)
 }
 
 
 protocol SomeViewOutput {
     
     func didLoadEvent()
-    func didTapNextButton()
 }
