@@ -18,7 +18,7 @@ final class FirstService: FirstServiceProtocol {
     
     // MARK: Public Properties
     
-    var description: String {
-        return UUID().uuidString
-    }
+    lazy var description: String = {
+        return UUID().uuidString.components(separatedBy: "-").first ?? "none"
+    }()
 }

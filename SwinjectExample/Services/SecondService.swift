@@ -23,10 +23,10 @@ final class SecondService: SecondServiceProtocol {
     
     // MARK: Public Properties
     
-    var advancedDescription: String {
-        let description = UUID().uuidString
+    lazy var advancedDescription: String = {
+        let description = UUID().uuidString.components(separatedBy: "-").first ?? "none again"
         return "\(first.description) \(description)"
-    }
+    }()
     
     
     // MARK: Lifecycle
